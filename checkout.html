@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout — Dell Store</title>
+ 
+  <link rel="stylesheet" href="dell.css">
+  <style>
+    
+ 
+  </style>
+</head>
+<body>
+  <header class="co-header">
+    <div class="co-inner">
+      <a class="co-logo" href="index.html">Back to Store</a>
+      <h1 class="co-brand">Checkout</h1>
+    </div>
+  </header>
+
+  <main class="checkout">
+    <div class="container">
+      <form class="checkout-form" action="#" method="post" novalidate>
+        <section class="billing">
+          <h2>Billing & Shipping Details</h2>
+
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" required placeholder="First Last">
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+91 98765 43210">
+
+          <label for="address">Address</label>
+          <input id="address" name="address" type="text" required placeholder="Street address, P.O. box">
+
+          <div class="row">
+            <div>
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" required>
+            </div>
+            <div>
+              <label for="state">State / Region</label>
+              <input id="state" name="state" type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="zip">Postal code</label>
+              <input id="zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{3,10}">
+            </div>
+            <div>
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="IN">India</option>
+                <option value="US">United States</option>
+                <option value="GB">United Kingdom</option>
+                <option value="OTHER">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <hr>
+
+          <h2>Payment</h2>
+
+          <label class="radio"><input type="radio" name="payment" value="card" checked> Credit / Debit card</label>
+          <label class="radio"><input type="radio" name="payment" value="upi"> UPI / Netbanking</label>
+
+          <div class="card-fields">
+            <label for="cardName">Name on card</label>
+            <input id="cardName" name="cardName" type="text" placeholder="Cardholder name" autocomplete="cc-name">
+
+            <label for="cardNumber">Card number</label>
+            <input id="cardNumber" name="cardNumber" inputmode="numeric" pattern="[0-9\s]{13,19}" type="text" placeholder="1111 2222 3333 4444" autocomplete="cc-number">
+
+            <div class="row small">
+              <div>
+                <label for="expiry">Expiry (MM/YY)</label>
+                <input id="expiry" name="expiry" type="text" placeholder="MM/YY" inputmode="numeric">
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input id="cvv" name="cvv" type="password" inputmode="numeric" maxlength="4" placeholder="123">
+              </div>
+            </div>
+
+            <label class="checkbox"><input type="checkbox" name="save"> Save card for faster checkout</label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="primary">Place order — Pay now</button>
+          </div>
+        </section>
+
+        <aside class="summary" aria-label="Order summary">
+          <h2>Order Summary</h2>
+          <div class="product">
+            <img src="https://dellstatic.luroconnect.com/media/catalog/category/notebook-db06250t-bl-gallery-1.jpg" alt="Dell Laptop" />
+            <div class="prod-meta">
+              <strong>Vostro 15 Laptop</strong>
+              <div class="muted">Qty: 1</div>
+              <div class="price">₹ 49,990.00</div>
+            </div>
+          </div>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹ 49,990.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>₹ 49,990.00</span>
+          </div>
+
+          <label for="coupon">Coupon code</label>
+          <div class="coupon">
+            <input id="coupon" name="coupon" type="text" placeholder="Enter code">
+            <button type="button" class="apply">Apply</button>
+          </div>
+
+          <p class="legal">By placing your order you agree to our <a href="#">terms</a> and <a href="#">privacy policy</a>.</p>
+        </aside>
+      </form>
+    </div>
+  </main>
+
+  
+  
+<footer>
+    
+    <!-- Why Our Users Trust Us -->
+    <section class="trust-section" aria-label="Why Our Users Trust Us">
+        <div class="trust-inner">
+            <h2 class="trust-title">Why Our Users Trust Us</h2>
+            <div class="trust-grid">
+                <article class="trust-card">
+                    <div class="trust-icon" aria-hidden="true">
+                        <!-- bolt svg -->
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path d="M13 2L3 14h7l-1 8L21 10h-7l-1-8z" fill="#0b3a3a" />
+                        </svg>
+                    </div>
+                    <h3>Expert Tech Support</h3>
+                    <p>Access to Dell's specialized technical support team available 24/7 for all your device needs.</p>
+                </article>
+
+                <article class="trust-card">
+                    <div class="trust-icon" aria-hidden="true">
+                        <!-- wrench svg -->
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2l-6 6" stroke="#0b3a3a" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M14 6l4 4L10 18l-4 1 1-4L14 6z" fill="#0b3a3a" />
+                        </svg>
+                    </div>
+                    <h3>Customizable Products</h3>
+                    <p>Build your perfect computer with personalized specifications to meet your exact requirements.</p>
+                </article>
+
+                <article class="trust-card">
+                    <div class="trust-icon" aria-hidden="true">
+                        <!-- card svg -->
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="5" width="20" height="14" rx="2" stroke="#0b3a3a" stroke-width="1.5"
+                                fill="#fff" />
+                            <path d="M2 10h20" stroke="#0b3a3a" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3>Secure Checkout</h3>
+                    <p>Shop with confidence using our encrypted payment system and data protection guarantees.</p>
+                </article>
+
+                <article class="trust-card">
+                    <div class="trust-icon" aria-hidden="true">
+                        <!-- shield svg -->
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z" fill="#0b3a3a" />
+                        </svg>
+                    </div>
+                    <h3>Extended Protection Plans</h3>
+                    <p>Safeguard your investment with optional coverage plans beyond the standard warranty.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA + Footer (blue band) -->
+    <section class="contact-cta" aria-label="Contact callout">
+        <div class="contact-inner">
+            <div class="contact-left">
+                <small class="contact-eyebrow">CONTACT US</small>
+                <h2 class="contact-heading">Have Questions That We Can Help With?</h2>
+                <p class="contact-sub">Call 1800-571-4002 or Click to Chat</p>
+            </div>
+            <div class="contact-right">
+                <a class="contact-chat" href="#">Call or Chat</a>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-left">© 2025 Dell</div>
+                <nav class="footer-nav">
+                    <a href="#">About Dell Technologies</a>
+                    <a href="#">About STPL</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Returns, Refunds &amp; Cancellations</a>
+                    <a href="#">Privacy Statement</a>
+                    <a href="#">Feedback</a>
+                </nav>
+            </div>
+        </footer>
+    </section>
+</footer>
+</body>
+</html>
